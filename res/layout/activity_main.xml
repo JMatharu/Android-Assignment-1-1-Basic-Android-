@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jmatharu.jagdeep.assign11.MainActivity" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Activity"
+        style="?android:attr/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="100dp"
+        android:onClick="secondActivity()"
+        android:text="@string/activity" />
+
+    <Button
+        android:id="@+id/Browse"
+        style="?android:attr/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Activity"
+        android:layout_alignBottom="@+id/Activity"
+        android:layout_alignRight="@+id/textName"
+        android:onClick="Browser()"
+        android:layout_marginRight="36dp"
+        android:text="@string/Browse" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:contentDescription="@string/desc"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+		android:layout_marginTop="200dp"
+		android:layout_marginLeft="40sp"
+        android:src="@drawable/ball" />
+   
+</RelativeLayout>
